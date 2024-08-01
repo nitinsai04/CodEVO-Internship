@@ -1,0 +1,181 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, rgba(240, 240, 240, 0.9), rgba(255, 255, 255, 0.9));
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background: rgba(0, 51, 102, 0.9);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+    transform: translateY(-2px);
+}
+
+/* Section styling */
+section {
+    padding: 50px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 10px;
+}
+
+/* Project section styling */
+.project {
+    margin-bottom: 30px;
+}
+
+.project h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #003366;
+    font-weight: 600;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #003366;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.project a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+/* Skills section styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    font-weight: 600;
+    color: #003366;
+}
+
+/* Contact section styling */
+#contact p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+#contact a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+#contact a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+/* Responsive Navigation Menu */
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 51, 102, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .nav-toggle {
+        display: block;
+        background: rgba(0, 51, 102, 0.9);
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 600;
+        border: 2px solid #ffcc00;
+        border-radius: 5px;
+    }
+}
